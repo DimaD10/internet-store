@@ -165,7 +165,27 @@
                                     </div>
                                 </div>
 
-                                <div class="edit-section">
+                                
+                                <div class="edit-section edit-section_profile">
+                                    <div class="edit-section__header">
+                                        <h2 class="edit-section__title">Редактировать профиль</h2>
+                                    </div>
+                                    <div class="edit-section__body">
+                                        <form class="form">
+                                            <input type="text" class="form__input" placeholder="Имя">
+                                            <input type="text" class="form__input" placeholder="Никнейм">
+                                            <input type="email" class="form__input" placeholder="Почта">
+                                            <input type="text" class="form__input" placeholder="Номер телефона">
+        
+                                            <div class="form__buttons">
+                                                <button class="form__button button-stroke" onclick="preventFormSubmit(event)" data-form="close-edit">Отменить</button>
+                                                <button class="form__button button-filled" data-form="close-edit">Сохранить</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <div class="edit-section edit-section_edit">
                                     <div class="edit-section__header">
                                         <h2 class="edit-section__title">Добавить товар</h2>
                                     </div>
@@ -198,7 +218,7 @@
                                         </form>
                                     </div>
                                 </div>
-                                <div class="edit-section">
+                                <div class="edit-section edit-section_edit">
                                     <div class="edit-section__header">
                                         <h2 class="edit-section__title">Добавить категорию</h2>
                                     </div>
@@ -213,7 +233,7 @@
                                         </form>
                                     </div>
                                 </div>
-                                <div class="edit-section">
+                                <div class="edit-section edit-section_edit">
                                     <div class="edit-section__header">
                                         <h2 class="edit-section__title">Добавить бренд</h2>
                                     </div>
@@ -231,7 +251,7 @@
                                         </form>
                                     </div>
                                 </div>
-                                <div class="edit-section">
+                                <div class="edit-section edit-section_edit">
                                     <div class="edit-section__header">
                                         <h2 class="edit-section__title">Добавить размер</h2>
                                     </div>

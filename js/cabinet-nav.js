@@ -35,7 +35,7 @@ window.addEventListener('click', (e) => {
         contentList.forEach(el => {
             el.classList.remove('edit-section_showed');
         });
-        let sections = document.querySelectorAll('.edit-section');
+        let sections = document.querySelectorAll('.edit-section_edit');
         sections[elPos].classList.add('edit-section_showed');
     };
 });
@@ -44,7 +44,7 @@ document.querySelector('.profile-edit').addEventListener('click', e => {
     contentList.forEach(el => {
         el.classList.remove('content-section_showed');
     });
-    document.querySelector('.edit-section').classList.add('edit-section_showed');
+    document.querySelector('.edit-section_profile').classList.add('edit-section_showed');
 })
 
 document.addEventListener('click', e => {
@@ -53,5 +53,14 @@ document.addEventListener('click', e => {
             el.classList.remove('edit-section_showed');
         })
         contentList[0].classList.add('content-section_showed');
+
+        if (e.target.closest('.content-section_showed')) {
+            e.target.closest('.content-section_showed').classList.remove('content-section_showed');
+
+            stepList.forEach(el => {
+                el.classList.remove("cab-nav__el_current");
+            });
+            stepList[0].classList.add('cab-nav__el_current');
+        }
     }
 })
